@@ -1,0 +1,33 @@
+<div class="container">
+    <form #myForm="ngForm" (ngSubmit)="addNewProduct()">
+        <div class="mb-3">
+            <label class="form-label">Title</label>
+            <input type="text" class="form-control" name="quantity" [(ngModel)]="newProduct.Title" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Ratings</label>
+            <input type="text" class="form-control" name="quantity" [(ngModel)]="newProduct.Ratings" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Description</label>
+            <input type="text" class="form-control" name="quantity" [(ngModel)]="newProduct.Description" required>
+        </div>
+        <div>
+            <label for="maker"> Maker: </label>
+            <select class="form-select mb-3" name="Maker" [(ngModel)]="newProduct.Maker" required>
+                <option *ngFor="let maker of makers" [value]="maker.name"> {{maker.name}} </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Image </label>
+            <input type="file" class="form-control" name="image" [(ngModel)]="newProduct.img" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">URL</label>
+            <input type="text" class="form-control" name="quantity" [(ngModel)]="newProduct.Url">
+        </div>
+        <button type="submit" [disabled]="myForm.invalid" class="btn btn-primary">Submit</button>
+
+    </form>
+</div>

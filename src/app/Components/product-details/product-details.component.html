@@ -1,0 +1,20 @@
+<div class="card text-center d-flex justify-content-center">
+    <div>
+        <img [src]="product.img" class="card-img w-25" alt="...">
+    </div>
+    <div class="card-header">
+
+        {{product.Maker}}
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">{{product.Description}}</p>
+        <a routerLink="/" class="btn btn-primary">Go Home</a>
+        <button class="btn btn-danger mx-2" (click)="removeProduct()">Remove</button>
+        <button class="btn btn-info mx-2" (click)="editProduct()">Edit</button>
+    </div>
+    <div class="card-footer text-muted">
+        2 days ago
+    </div>
+
+</div>

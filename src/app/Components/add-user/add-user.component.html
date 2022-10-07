@@ -1,0 +1,32 @@
+<div class="container">
+    <form #myForm="ngForm" [formGroup]="MakerForm" (ngSubmit)="addUserMaker()">
+        <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" name="quantity" formControlName="name">
+        </div>
+        <div *ngIf="formControl['name'].touched  && formControl['name'].invalid ">
+            <p class="text-danger" *ngIf="formControl['name'].errors?.['required']"> Name is Required </p>
+
+            <p class="text-danger" *ngIf="formControl['name'].errors?.['minlength']"> Name is too short at least 3 chars
+            </p>
+        </div>
+        <div class="mb-3">
+            <label for="Email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="Email" formControlName="email" aria-describedby="emailHelp">
+        </div>
+        <div *ngIf="formControl['name'].touched  && formControl['email'].invalid ">
+            <p class="text-danger" *ngIf="formControl['email'].errors?.['required']"> Name is Required </p>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="conditions" formControlName="conditions">
+            <label class="form-check-label" for="exampleCheck1">I agree to the <a routerLink="/conditions">Terms and
+                    Conditions</a></label>
+        </div>
+        <div *ngIf="formControl['name'].touched  && formControl['conditions'].invalid ">
+            <p class="text-danger" *ngIf="formControl['conditions'].errors"> Review Conditions </p>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="myForm.form.invalid">Submit</button>
+
+    </form>
+
+</div>

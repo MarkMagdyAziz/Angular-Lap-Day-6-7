@@ -1,0 +1,25 @@
+<div class="container">
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let maker of makers">
+
+                <td>{{maker.id}}</td>
+                <td>{{maker.name}}</td>
+                <td>{{maker.email}}</td>
+                <td col="2">
+                    <button class="btn btn-primary btn-sm me-2" (click)="editUser(maker.id)">Edit</button>
+                    <button type="button" class="btn btn-secondary btn-sm"
+                        (click)="deleteUser(maker.id)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
