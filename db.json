@@ -13,24 +13,6 @@
       ]
     },
     {
-      "id": 2,
-      "Maker": "jenlooper",
-      "img": "https://user-images.githubusercontent.com/41929050/61567049-13938600-aa33-11e9-9c69-a4184bf8e524.jpeg",
-      "Url": "https://www.hackster.io/agent-hawking-1/book-light-dee7e4",
-      "Title": "A beautiful switch-on book light",
-      "Description": "Use craft items you have around the house, plus two LEDs and a LilyPad battery holder, to create a useful book light for reading in the dark.",
-      "Ratings": null
-    },
-    {
-      "id": 3,
-      "Maker": "@jenlooper",
-      "img": "https://user-images.githubusercontent.com/41929050/61567053-13938600-aa33-11e9-9780-104fe4019659.png",
-      "Url": "https://www.hackster.io/agent-hawking-1/bling-your-laptop-with-an-internet-connected-light-show-30e4db",
-      "Title": "Bling your Laptop with an Internet-Connected Light Show",
-      "Description": "Create a web-connected light-strip API controllable from your website, using the Particle.io.",
-      "Ratings": null
-    },
-    {
       "id": 4,
       "Maker": "jenlooper",
       "img": "https://user-images.githubusercontent.com/41929050/61567051-13938600-aa33-11e9-8ae7-0b5c19aafab4.jpeg",
@@ -148,13 +130,12 @@
       "id": "1664997493559"
     },
     {
-      "Title": "sadasdas",
-      "Ratings": "dfsdfsdf",
-      "Description": "fsdfsd",
-      "Maker": "selinazawacki",
-      "img": "C:\\fakepath\\Img 1.png",
-      "Url": "dfdsf",
-      "id": "1665057593414"
+      "Title": "product",
+      "Ratings": "2",
+      "Description": "psd",
+      "Maker": "mark",
+      "img": "C:\\fakepath\\Corona Tracker.png",
+      "id": "1665341161441"
     }
   ],
   "makers": [
@@ -162,16 +143,6 @@
       "id": 1,
       "name": "selinazawacki",
       "email": "mmka@gmail.com"
-    },
-    {
-      "id": 3,
-      "name": "selinazawacki",
-      "email": "mmka@gmail.com"
-    },
-    {
-      "id": 4,
-      "name": "jenlooper",
-      "email": "mmka1231@gmail.com"
     },
     {
       "id": 5,
@@ -183,6 +154,12 @@
       "email": "mark.sad@gmail.com",
       "conditions": true,
       "id": 6
+    },
+    {
+      "name": "mark",
+      "email": "mk@gmail.com",
+      "conditions": true,
+      "id": 7
     }
   ]
 }

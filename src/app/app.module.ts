@@ -3,10 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import {HttpClientModule} from '@angular/common/http';
-import { ProductsComponent } from './Components/products/products.component'
-import { FormsModule ,ReactiveFormsModule} from '@angular/forms';
+import { ProductsComponent } from './Components/products/products.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { AddProductComponent } from './Components/add-product/add-product.component';
 import { ProductDetailsComponent } from './Components/product-details/product-details.component';
@@ -30,16 +30,15 @@ import { RegisterFormComponent } from './Components/register-form/register-form.
     UserLoginComponent,
     UserLogoutComponent,
     RegisterFormComponent,
-  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-     ReactiveFormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
